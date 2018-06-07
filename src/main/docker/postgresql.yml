@@ -1,0 +1,11 @@
+version: '2'
+services:
+    jh_beta-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/jh_beta/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=jh_beta
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
